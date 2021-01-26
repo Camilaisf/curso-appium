@@ -1,0 +1,15 @@
+{
+  "name": "curso-appium",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camila Fonseca",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.0.4",
+    "webdriverio": "^6.12.1"
+  }
+}

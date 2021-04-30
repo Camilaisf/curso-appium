@@ -9,10 +9,23 @@ exports.config = {
   output: './output',
   helpers: {
     Appium: {
-      app: 'http://localhost',
       platform: 'Android',
-      device: 'pixel'
-    }
+      app: './app-release.apk',
+      desiredCapabilities: {
+        appPackage: "com.qazandoapp",
+        appActivity: "MainActivity",
+        deviceName: "pixel",
+        platformVersion: "11"
+      }
+      /*
+      Appium: {
+        platform: 'iOS',
+        app: './qazandoapp.app',
+        desiredCapabilities: {
+          deviceName: "iPhone 11 Pro Max",
+          platformVersion: "14.1"
+        }
+    }*/
   },
   include: {
     I: './steps_file.js'
@@ -31,5 +44,6 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     }
+  }
   }
 }
